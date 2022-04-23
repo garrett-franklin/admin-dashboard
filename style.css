@@ -5,8 +5,8 @@ body {
 .container {
   min-height: 100vh;
   display: grid;
-  grid-template-columns: 1fr 5fr;
-  grid-template-rows: 1fr 6fr;
+  grid-template-columns: minmax(150px, 1fr) 5fr;
+  grid-template-rows: minmax(100px, 1fr) 6fr;
   gap: 4px;
 }
 
@@ -14,8 +14,24 @@ body {
   background-color: aquamarine;
   grid-row: 1 / -1;
 }
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+.sidebar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.sidebar li {
+  display: flex;
+  align-items: center;
+}
+li p {
+  margin-left: 5px;
+}
 
-.menubar {
+.header {
   background-color: bisque;
 }
 
